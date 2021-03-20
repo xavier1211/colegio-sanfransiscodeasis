@@ -1,0 +1,457 @@
+body {
+ padding-top: 0px; 
+}
+
+#wowslider-container1{
+	padding-top: 52px;
+}
+/*estilo globales y ancho de imagenes*/
+body{
+	/*background: #ccc url(../img/cerebro.jpg) no-repeat center center fixed;*/
+	background: white;
+	/*background-color:black;
+	background-image:
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;*/
+	font-family: 'Open Sans' , sans-serif;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background: cover;
+	text-align: center;
+
+}
+
+.inicial-fondo , .primaria-fondo, .secundaria-fondo{
+	
+
+}
+.logo {
+	max-width: 100%;
+	
+}
+
+/*TIPOGRAFIA GLOBAL*/
+/*Font-face Regla para mostrar adecuadamente la tipografia y que enontramos en la carpeta fonts*/
+@font-face {
+	font-family: 'Aller Regular';
+	src: url('../fonts/aller.regular.ttf');
+}
+
+@font-face {
+	font-family: 'Aller Bold';
+	src: url('../fonts/aller.bold.ttf');
+}
+
+@font-face {
+	font-family: 'Aller Light';
+	src: url('../fonts/aller.light.ttf');
+}
+
+h1{
+	font-family: 'Aller Bold', sans-serif;
+	font-size: 3.5em;
+	font-weight: bolder;
+}
+
+h2,h3{
+	font-family: 'Aller Regular',sans-serif;
+}
+
+h2{
+	font-size: 2.4em;
+	font-weight: bolder;
+}
+
+h3{
+	font-size: 2em;
+	font-weight: lighter;
+}
+
+h4, p{
+	font-family: 'Aller Light',sans-serif;
+	font-size: 1.3em;
+	font-weight: bolder;
+}
+
+label {
+	font-family: 'Aller Light',sans-serif;
+	font-size: 1.3em;
+	font-weight: bolder;
+}
+
+/*Botones*/
+/*Secciones */
+/***Barra de Navegacion**/
+.navbar-brand {
+	padding: 7px 5px;
+	width: 244px;
+
+	/*7 arriba y abajo  ; 5 a los lados el navbar-brand para posicionar bien el logo en la barra de menu*/
+}
+
+
+.navbar-inverse {
+	background-color:#047e29 ;
+	border-bottom-width: medium;/**La raya abajo de la barra de menu*/
+	border-color: #FFFF00;
+}
+
+.navbar-inverse img{
+	position: absolute;
+	width: 60px;
+	border-radius: 4px;
+}
+
+
+.navbar-inverse .navbar-toggle {
+	background: rgb(33, 100, 189); /*el navbar-toogle es el boton ejemplo:; Nosotros , Contacto, iconos*/
+}
+
+/*Color de cada lista a la derecha de la barra de navegacion*/
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+	font-weight: 900;
+}
+
+.navbar-inverse .navbar-left>li {
+	color: #fff;
+	font-weight: 900;
+	top: 15px;
+	right: 160px;
+}
+
+/*Hover: Configuracion para seleccionar elementos al pasar el raton sobre ellos*/
+.navbar-inverse .navbar-nav>li>a:hover{
+	color: #fff;
+	background-color: transparent;
+	text-transform: uppercase;
+}
+
+/*icono de compartir - editar su color y su hover*/
+.navbar-inverse .navbar-nav .fa-share-alt-square{
+	color: #fff;
+}
+.navbar-inverse .navbar-nav .fa-share-alt-square:hover{
+	color: red;
+}
+
+ /*Fondo del boton de la barra de navegacion*/
+.navbar-nav .open .dropdown-menu{
+	background: #fff;
+}  
+
+    /**ICONOS DE LAS REDES SOCIALES EN LA BARRA DE NAVEGACION**/
+.iconos{
+	margin-top: -22px;
+	bottom: -10px;
+}
+ /* Margin-top : Margen de la parte de arriba ;
+ 	Bottom : Alejar o acerca del borde de arriba  de pagina*/
+
+/*El botom de la navarra de navegacion no tenga un fondo negro*/
+.navbar-inverse .navbar-nav>.open>a:focus {
+	color:#770000;
+	background-color: transparent;
+}
+/** cuando estas sobre el icono con nuestro mouse**/
+.navbar-inverse .navbar-nav>.open>a:hover{
+	color:#770000;
+}
+
+
+   /*** ENCABEZADO***/
+.btn-default{
+	background-color: #0B0B61;
+	border-color:transparent;
+	color: #fff;
+	font-size: 1.5em;
+	margin-top: 15px;
+	display: inline-block; /*
+	block: hace que el comportamiento del elemento sea como un bloque.
+	inline: el elemento se renderizará en línea con otros elementos.
+	inline-block: el elemento tendrá un comportamiento en linea.
+	*/
+    text-align: center;
+    white-space: nowrap;  /*Gestion espacios en blanco ejemplo Hola    que   tal  = Hola que tal*/
+    vertical-align: middle;
+    -ms-touch-action: manipulation; /*IE 10*/
+    touch-action: manipulation;
+    cursor: pointer;/*el puntero se vuelve una manito*/
+    -webkit-user-select: none; /* Chrome all/ Safari all*/
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+#convenio-wrapper-index {
+	border-top: 3px solid greenyellow;  /*Linea de borde superior*/
+}
+
+#convenio-wrapper-index .descripcion-empresa{
+	padding-top: 30px;
+}
+
+.btn-default:hover{  
+   color:#e91f11;
+}
+
+.texto-cotiza-der{
+	margin-top: 20px;
+}
+
+.texto-cotiza-izq h1{
+	color :#1b1251;
+}
+
+.texto-cotiza-izq h3{
+	font-weight: bolder;
+	color :#1b1251;
+}
+.texto-cotiza-izq p{
+	font-weight: bolder;
+	font-size: 1.45em;
+	color :#1b1251;
+}
+
+.row-columnas{
+	padding-top: 20px;
+	color: #0d023e;
+	border-top: 3px solid green;
+	background-color: transparent;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+
+}
+.row-columnas h3{
+	color: rgb(7, 94, 7);
+	font-style: oblique;
+	
+}
+.marketing {
+	padding-bottom: 40px;
+	color: rgb(38, 38, 73);
+
+
+}
+
+.marketing h2{
+	text-align: left;
+	color: black;
+	padding-top: 10px;
+	font-size: 30px;
+
+}
+/*Frase Celebre Ciceron*/
+.marketing1 img{
+	width: 200px;
+	height: 160px;
+	border-radius: 15px;
+	top: 10px;
+	font-size: 20px;
+	margin:2px 4px;
+
+}
+
+#frase-wrapper{
+	color: #0897cf;
+	margin-top:60px;
+	border-top: 3px solid green;  /*Linea de borde superior*/
+}
+
+#frase-wrapper footer{
+  color: #0f9999;
+}
+
+footer h3{
+	font-size: 2.5em;
+}
+
+
+/*Seccion Nosotros*/
+#nosotros-wrapper{
+	background: #fff url() repeat center center fixed;
+	border-bottom: 3px solid rgba(6,19,89,1);  /*Linea de borde inferior*/
+	border-top: 3px solid green;  /*Linea de borde superior*/
+	color: #0d023e;
+	padding-bottom: 33px;
+}
+
+#nosotros-wrapper h2{
+  padding-top: 25px;
+}
+#nosotros-wrapper hr{
+	border-top: 2px solid #980a15;
+	width: 	100px;
+}
+#nosotros-wrapper .container{
+ padding-top: 20px;
+ max-width: 100%;
+}
+
+#nosotros-wrapper .container-nosotros{
+	padding-top: 20px;
+	
+   } 
+   
+.descripcion-empresa ul{
+	position: relative;
+	text-align: left;
+	font-size: 20px;
+	
+
+}
+
+#nosotros-wrapper img{
+	width: 250px;
+	height: 200px;
+	border-radius: 10px;
+
+}
+
+.ws_images img{
+	width: 100%;
+	height: 100%;
+}
+
+/*Seccion contacto*/
+#contacto-wrapper{
+	color:#0d023e;
+	background: white;
+	margin-top: 5px;
+	padding-right: -100px; 
+	border-top: 3px solid green;
+}
+
+#contacto-wrapper hr{
+	border-top: 2px solid #980a15;
+	width: 100px;
+	margin: 10;
+}
+
+.datos{
+	padding-top:  10px;
+	padding-bottom: 10px;
+}
+
+.btn-inverse{
+	color:#fff;
+	background-color: #770000;
+}
+
+.btn-inverse:hover{
+	color:#770000;
+	background-color: #fff;
+}
+/*Seccion de Pie de Pagina*/
+
+#footer-wrapper{
+ 	background-color: #770000;
+ 	color : #fff;
+ 	text-align: center;
+ 	margin-top: 0px;
+ 	border-top-width: 20px;
+ 	padding-top: 10px;
+ 	padding-bottom: 0px;
+ 	margin-bottom: -60px;
+}
+footer{
+	font-family: 'Aller Light',sans-serif;
+	font-size: 0.599em;
+}
+footer a{
+	color: #fff;
+}
+
+/*******INICIAL.HTML PRIMARIA.HTML  SECUNDARIA.HTML********/
+/*imagenes de inicial,primaria y secundaria.html*/
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	min-width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 80px;
+	width: 400px;
+	height: 400px;
+	padding-right: 10px;
+}
+
+/*Seccion Encabezado -INDEX Inicial Primaria Secundaria */
+/*editar imagen libros */
+.encabezado-img{
+	display: block;
+	margin : auto;
+	max-width: 100%;
+}
+
+.encabezado-img-primaria,.encabezado-img-secundaria,.encabezado-img-inicial{
+	display: block;
+	margin : auto;
+	max-width :100%;
+}
+
+
+/*Linea separadora de Inicial,Primaria,Secundaria*/
+.featurette-divider{
+	margin: 70px 0;
+	border-top: 2px solid #C21D03;
+	width: 100%;
+}
+
+/*Descripcion empresa de inicial,primaria, secundaria*/
+#convenio-wrapper .descripcion-empresa-niveles{
+	margin-top : 80px;
+}
+
+#convenio-wrapper{
+	margin-bottom:  -20px;
+	border-top: 3px solid green;
+}
+/*Featurette : secciones*/
+.featurette{
+	margin-top:-80px;
+	margin-bottom: 80px;
+}
+
+#propuesta-wrapper{
+	border-top: 3px solid green;
+}
+/*Pie de pagina*/
+#footer-wrapper-niveles{
+ 	background-color: #770000;
+ 	color : #fff;
+ 	text-align: center;
+ 	margin-top: -10px;
+ 	border-top-width: 10px;
+ 	padding-top: 10px;
+ 	padding-bottom: 0px;
+ 	margin-bottom: -40px;
+}
+
+.secundaria-docentes li {
+  text-align:  left;
+  margin-left: 15%;
+  color :#1b1251;
+  font-size: 1.3em;
+  font-weight: lighter;
+}
+
+.featurette-heading
+{
+ color: #1b1251;
+}
+
+.lead {
+ color : #1b1251;
+}
+/*padding-top:  aumentar o alejar la distancia al borde superior de la seccion
+  padding-bottom: aumentar o alejar la distancia al borde inferior de la seccion
+  margin-bottom: -25px para acercar al margen
+  margin-top : alejar o acercar del margen superior;
+  
+  padding-bottom:10*/

@@ -1,0 +1,52 @@
+.social ul{
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+.social {
+	position: fixed;
+	left:0;
+	top: 100px;
+	z-index: 2000;
+}
+
+.social ul{
+	
+}
+
+.social ul li a{
+	display: inline-block;
+	color:#fff;
+	background: #000;
+	padding: 10px 7px;
+	text-decoration: none;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.social ul li .icon-facebook{background: #3b5998;}
+.social ul li .icon-twitter{background: #00abf0;}
+.social ul li .icon-google-plus{background:#d95232;}
+.social ul li .icon-pinterest{background:#ae181f;}
+.social ul li .icon-mail{background:#666666;}
+
+.social ul li a:hover{
+	padding: 10px 14px;
+	background:#000;
+
+}
+/** Editar color de los elementos de la lista del  menu desplegable con redes sociales*/
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: #0E0582;
+    font-weight: 900;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover{
+	color: #0E0582;
+	font-weight: 900;
+	text-transform: uppercase;
+}
